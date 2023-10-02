@@ -8,7 +8,11 @@ US BikeShare Project
 
 ### Description
 The program can be used to view the **raw data** or **analytical data** stored in **.csv files**
-The information is stored in 3 separate .csv files specific to Chicago, Washington DC and New York City. 
+The information is stored in 3 separate .csv files specific to Chicago, Washington DC and New York City.
+
+### Features
+* View data
+* Analyze data
 
 ### Files used
 The files include:
