@@ -5,7 +5,7 @@ import time
 def get_city():
     city_list = ['chicago', 'new york city', 'washington']
     while True:
-        city = input("Enter a city. Options are Chicago, New York City and Washington: ")
+        city = input("Enter the name of a city. Options are Chicago, New York City and Washington: ")
         if not city.replace(" ", "").isalpha():
             print('Please enter only letters')
             continue
