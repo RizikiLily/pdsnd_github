@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import time
 
+#prompting the user to enter the name of the city
 def get_city():
     city_list = ['chicago', 'new york city', 'washington']
     while True:
@@ -19,6 +20,7 @@ def get_city():
                 break
     return city
 
+#function to prompt the user the enter the days to filter
 def get_day():
     day_list = ['sunday','monday', 'tuesday','wednesday', 'thursday', 'friday','saturday']
     day = []
@@ -55,6 +57,7 @@ def get_day():
     print(day)
     return day
 
+#function to display raw data
 def display_data():
     city = get_city()
     month =get_month()
@@ -77,6 +80,7 @@ def display_data():
         else:
             break
 
+#function to load the .csv file
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -98,6 +102,7 @@ def load_data(city, month, day):
     #print(f"month count is {df['month'].value_counts}")
     return df
 
+#Function to prompt user to enter the month
 def get_month():
     month_list = [1, 2, 3, 4, 5, 6]
     month = []
@@ -134,6 +139,7 @@ def get_month():
     #print(month)
     return month
 
+#function to compute statistical information
 def station_stats(df):
     """Displays statistics on the most popular stations and trips"""
     print('\n***Calculating the most popular stations and trips***\n')
