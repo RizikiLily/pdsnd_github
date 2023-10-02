@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import time
-
+#Function to prompt user to enter the name of the city
 def get_city():
     city_list = ['chicago', 'new york city', 'washington']
     while True:
@@ -19,6 +19,7 @@ def get_city():
                 break
     return city
 
+#Function to prompt user to enter the day
 def get_day():
     day_list = ['sunday','monday', 'tuesday','wednesday', 'thursday', 'friday','saturday']
     day = []
@@ -55,6 +56,7 @@ def get_day():
     print(day)
     return day
 
+#Function to display raw data
 def display_data():
     city = get_city()
     month =get_month()
