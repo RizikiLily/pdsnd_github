@@ -1,12 +1,11 @@
 import pandas as pd
 import numpy as np
 import time
-
-#prompting the user to enter the name of the city
+#Function to prompt user to enter the name of the city
 def get_city():
     city_list = ['chicago', 'new york city', 'washington']
     while True:
-        city = input("Enter a city. Options are Chicago, New York City and Washington: ")
+        city = input("Enter the name of a city. Options are Chicago, New York City and Washington: ")
         if not city.replace(" ", "").isalpha():
             print('Please enter only letters')
             continue
@@ -20,7 +19,7 @@ def get_city():
                 break
     return city
 
-#function to prompt the user the enter the days to filter
+#Function to prompt user to enter the day
 def get_day():
     day_list = ['sunday','monday', 'tuesday','wednesday', 'thursday', 'friday','saturday']
     day = []
@@ -57,7 +56,7 @@ def get_day():
     print(day)
     return day
 
-#function to display raw data
+#Function to display raw data
 def display_data():
     city = get_city()
     month =get_month()
