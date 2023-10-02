@@ -1,17 +1,22 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+October 2, 2023
 
 ### Project Title
-Replace the Project Title
+US BikeShare Project
 
 ### Description
-Describe what your project is about and what it does
+The program can be used to view the **raw data** or **analytical data** stored in **.csv files**
+The information is stored in 3 separate .csv files specific to Chicago, Washington DC and New York City. 
 
 ### Files used
-Include the files used
+The files include:
+* main.py
+* chicago.csv
+* washington.csv
+* newyorkcity.csv
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+https://stackoverflow.com/questions/9320766/python-math-typeerror-nonetype-object-is-not-subscriptable
